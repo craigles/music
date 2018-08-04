@@ -4,10 +4,10 @@ layout: default
 <h1>Recordings!</h1>
 <table>
 
-{% for r in site.recordings %}
+{% for r in site.data.recordings %}
     <tr>
         <td>{{r.date}}</td>
-        <td><a href="{{site.url}}{{r.url}}">{{r.path}}</a></td>
+        <td><a href="{{site.url}}{{r.path}}">{{r.title}}</a></td>
     </tr>
 {% endfor %}
 </table>
