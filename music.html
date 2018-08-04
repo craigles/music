@@ -3,8 +3,7 @@ layout: default
 ---
 <h1>Recordings!</h1>
 <table>
-{% assign recordings = site.data.recordings | sort: 'date' %}
-{% for r in recordings %}
+{% for r in site.data.recordings %}
     <tr>
         <td>{{r.date}}</td>
         <td><a href="{{site.url}}{{r.path}}">{{r.title}}</a></td>
