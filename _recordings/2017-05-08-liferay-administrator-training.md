@@ -1,5 +1,5 @@
 ---
-layout: events
+layout: recordings
 title:  Liferay - Portal Administrator Training
 date:   2017-05-08 8:00 am
 categories: Liferay
