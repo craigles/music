@@ -1,5 +1,4 @@
 theme: jekyll-theme-minimal
 collections:
-  recordings
-
-future: true
+  recordings:
+    output: true
