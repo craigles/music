@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-{{site.url}}
-{% for event in site.recordings %}
-    {{ event.url }}
+<h1>Recordings</h1>
+<ul>
+{% for r in site.recordings %}
+    <li><a href="{{site.url}}{{r.url}}">{{r.path}}</li>
 {% endfor %}
+</ul>
