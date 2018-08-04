@@ -4,6 +4,6 @@ layout: default
 <h1>Recordings</h1>
 <ul>
 {% for r in site.recordings %}
-    <li><a href="{{site.url}}{{r.url}}">{{r.path}}</li>
+    <li><a href="{{site.url}}{{r.url}}">{{r.date}} {{r.path}}</li>
 {% endfor %}
 </ul>
