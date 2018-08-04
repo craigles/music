@@ -2,3 +2,5 @@ theme: jekyll-theme-minimal
 collections:
   recordings:
     output: true
+
+future: true
