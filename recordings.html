@@ -9,10 +9,7 @@ layout: default
 <div>
   <div id="main" class="col-lg-8 events-table">
     {% for event in site.recordings %}
-    <div class="row events-row">
-      <div class="col-md-3"><a href="{{ site.baseurl }}{{ event.url }}">{{ event.title }}</a></div>
-      <div class="col-md-6">{{ event.summary }}</div>
-      <div class="col-md-3">{{ event.date | date: "%b %-d, %Y" }}</div>
+    <div class="row events-row">{{ event.title }}
     </div>
     {% endfor %}
   </div>
