@@ -1,7 +1,4 @@
-<html>
-  <body>
-Recordings
-asdfsadf
+rec
 
 {% for item in site.recordings %}
   <h2>{{ item.title }}</h2>
