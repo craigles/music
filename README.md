@@ -1,4 +1,4 @@
-# recursor
+# music
 {% assign items = site.data.recordings | sort: 'date' %}
 <table>
 {% for r in items reversed %}
