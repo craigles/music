@@ -1,4 +1,4 @@
-# recursor!
+# recursor
 {% assign items = site.data.recordings | sort: 'date' %}
 <table>
 {% for r in items reversed %}
@@ -8,5 +8,5 @@
     </tr>
 {% endfor %}
 </table>
-<script src="/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 {% include open-embed.html %}
