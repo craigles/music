@@ -4,7 +4,14 @@
 {% for r in items reversed %}
     <tr>
         <td>{{r.date}}</td>
-        <td><a href="{{site.url}}/recordings/{{r.path}}?autoplay=1&loop=1&controls=0">{{r.title}}</a></td>
+        <td>
+            {{r.title}}
+        </td>
+        <td>
+            <audio controls>
+                <source src="{{site.url}}/recordings/{{r.path}}" type="audio/mpeg">
+            </audio>
+        </td>
     </tr>
 {% endfor %}
 </table>
