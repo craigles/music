@@ -8,3 +8,5 @@
     </tr>
 {% endfor %}
 </table>
+<script src="/js/jquery.min.js"></script>
+{% include open-embed.html %}
