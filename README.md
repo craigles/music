@@ -8,8 +8,7 @@
             {{r.title}}
         </td>
         <td>
-            <audio controls preload="none" loop>
-                <source src="{{site.url}}/recordings/{{r.path}}" type="audio/mpeg">
+            <audio src="{{site.url}}/recordings/{{r.path}}" controls preload="none" loop>
             </audio>
         </td>
     </tr>
