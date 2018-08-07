@@ -1,5 +1,5 @@
 theme: jekyll-theme-minimal
-url: https://craigles.github.io/music
+url: https://craigles.github.io/recordings
 collections:
   recordings:
     output: true
