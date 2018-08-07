@@ -8,8 +8,7 @@
             {{r.title}}
         </td>
         <td>
-            <audio src="{{site.url}}/recordings/{{r.path}}" controls preload="none" loop>
-            </audio>
+            <audio src="{{site.url}}/recordings/{{r.path}}" controls preload="none" />
         </td>
     </tr>
 {% endfor %}
