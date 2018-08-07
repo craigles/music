@@ -9,8 +9,7 @@
             {{r.title}}
         </td>
         <td>
-            <video src="{{site.url}}/recordings/{{r.path}}" controls preload="none">
-            </audio>
+            <video src="{{site.url}}/recordings/{{r.path}}" controls preload="none" />
         </td>
     </tr>
 {% endfor %}
