@@ -1,5 +1,5 @@
-# Field Recordings
-{% assign items = site.data.fieldRecordings | sort: 'date' %}
+# miscellaneous
+{% assign items = site.data.miscellaneous | sort: 'date' %}
 <table>
 {% for r in items reversed %}
     <tr>
