@@ -14,4 +14,3 @@
     </tr>
 {% endfor %}
 </table>
-
