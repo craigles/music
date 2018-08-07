@@ -1,11 +1,11 @@
-<span style="text-align: left;">
-  [music](music)
-</span>
+<div style="text-align: left;">
+  <a href="music">music</a>
+</div>
 
-<span style="text-align: center;">
-  [field recordings](FieldRecordings)
-</span>
+<div style="text-align: center;">
+  <a href="fieldrecordings">field recordings</a>
+</div>
 
-<span style="text-align: right;">
-  [video](Video)
-</span>
+<div style="text-align: right;">
+  <a href="video">video</a>
+</div>
