@@ -2,8 +2,8 @@
 {% assign itemsByDate = site.data.music | group_by: 'date' | sort: 'date' %}
 
 <table>
-    {% for rDate in itemsByDate %}
-        {% assign items = rDate.items | sort: 'title' %}
+    {% for rDate in itemsByDate.items %}
+        {% assign items = rDate | sort: 'title' %}
         {% for r in items %}
             <tr>
                 <td>{{r.date}}</td>
