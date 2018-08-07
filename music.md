@@ -3,7 +3,7 @@
 
 <table>
     {% for rDate in itemsByDate %}
-        {% assign items = rDate.items | sort: "title" %}
+        {% assign items = rDate.items | sort: 'title' %}
         {% for r in items %}
             <tr>
                 <td>{{r.date}}</td>
