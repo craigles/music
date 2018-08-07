@@ -2,7 +2,8 @@
 {% assign itemsByDate = site.data.music | group_by: 'date' | sort: 'title' %}
 
 <table>
-    {% for r in itemsByDate %}
+    {% for rGroup in itemsByDate %}
+        {% for r in rGroup.items %}
             <tr>
                 <td>{{r.date}}</td>
                 <td>
@@ -12,5 +13,6 @@
                     <audio src="{{site.url}}/recordings/{{r.path}}" controls controlsList="nodownload" preload="none" />
                 </td>
             </tr>
+        {% endfor %}
     {% endfor %}
 </table>
