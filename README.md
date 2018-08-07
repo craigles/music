@@ -2,9 +2,7 @@
   <a href="music">music</a>
 </div>
 
-<div style="text-align: center;">
-  <a href="fieldrecordings">field recordings</a>
-</div>
+  <a href="fieldrecordings" style="text-align: center;">field recordings</a>
 
 <div style="text-align: right;">
   <a href="video">video</a>
