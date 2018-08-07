@@ -1,5 +1,5 @@
 # music
-{% assign itemsByDate = site.data.music | group_by: 'date' | sort: 'title' %}
+{% assign itemsByDate = site.data.music | group_by: 'date' | sort: 'date' %}
 
 <table>
     {% for rGroup in itemsByDate %}
