@@ -25,9 +25,4 @@
         {% endfor %}
     {% endfor %}
 </table>
-{% assign totalMinutesHours = totalMinutes | divided_by: 60 %}
-{% assign totalHours = totalHours | plus: totalMinutesHours %}
-
-{% assign totalMinutes = totalMinutes | modulo: 60 %}
-{{totalHours}}
-{{totalMinutes}}
+{% include totalTime.html minutes=totalMinutes hours=totalHours %}
