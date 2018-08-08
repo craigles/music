@@ -1,3 +1,3 @@
 # music
 
-{% include audioList.md items=site.data.music %}
+{% include audioList.html items=site.data.music %}
