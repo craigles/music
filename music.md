@@ -30,6 +30,7 @@
         <tr>
             <td colspan="2"></td>
             <td>{% include totalTime.html minutes=totalMinutes hours=totalHours %}</td>
+            <td></td>
         </tr>
     </tfoot>
 </table>
