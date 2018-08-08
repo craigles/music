@@ -19,7 +19,7 @@
                         {{r.length}}
                     </td>
                     <td>
-                        <audio src="{{site.url}}/recordings/{{r.path | url_encode}}" controls controlsList="nodownload" preload="none" />
+                        <audio src="{{site.url}}/recordings/{{r.path | uri_escape}}" controls controlsList="nodownload" preload="none" />
                     </td>
                 </tr>
             {% endfor %}
