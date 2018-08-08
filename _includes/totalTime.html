@@ -1,0 +1,6 @@
+{% assign totalMinutesHours = include.minutes | divided_by: 60 %}
+{% assign totalHours = include.hours | plus: totalMinutesHours %}
+
+{% assign totalMinutes = totalMinutes | modulo: 60 %}
+{% assign result = totalHours | append: ':' | append: totalMinutes %}
+{{result}}
