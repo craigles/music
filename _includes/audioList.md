@@ -13,7 +13,7 @@
                 <tr>
                     <td>{{r.date}}</td>
                     <td>
-                        {{r.title}} {% include random.md min=5 max=100 %}
+                        {% include colourfy.md text=r.title %}
                     </td>
                     <td>
                         {{r.length}}
