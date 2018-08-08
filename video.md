@@ -10,6 +10,8 @@
         <td>
             {{r.title}}
         </td>
+    </tr>
+    <tr>
         <td>
             <video src="{{site.url}}/recordings/{{r.path}}" controls preload="none" />
         </td>
