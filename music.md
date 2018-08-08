@@ -11,6 +11,9 @@
                     {{r.title}}
                 </td>
                 <td>
+                    {{r.length}}
+                </td>
+                <td>
                     <audio src="{{site.url}}/recordings/{{r.path}}" controls controlsList="nodownload" preload="none" />
                 </td>
             </tr>
