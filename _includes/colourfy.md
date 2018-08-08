@@ -1,3 +1,4 @@
 {% for c in include.text %}
-  {{c}}
+  {% assign r = {% include random.md min=0 max=255 %} %}
+  {{r}}
 {% endfor %}
