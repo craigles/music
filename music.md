@@ -1,12 +1,17 @@
 # music
 {% assign itemsByDate = site.data.music | sort: 'date' | group_by: 'date' | reverse %}
-{% assign totalLength = 0 %}
+{% assign totalMinutes = 0 %}
+{% assign totalHours = 0 %}
+
 <table>
     {% for rGroup in itemsByDate %}
         {% assign rGroupItems = rGroup.items | sort: 'title' %}
         {% for r in rGroupItems %}
             {% assign lengthComponents = r.length | split: ':' %}
-            {% assign totalLength = totalLength | plus: lengthComponents[1] %}
+            {% assign totalMinutes = totalMinutes | plus: lengthComponents[1] %}
+            {% assign totalHours = totalHours | plus: lengthComponents[0] %}
+            {% assign totalMinutes = totalMinutes | plus: totalMinutes % 60 %}
+            {% assign totalHours = totalHours | plus: totalMinutes / 60 %}
             <tr>
                 <td>{{r.date}}</td>
                 <td>
@@ -23,4 +28,5 @@
     {% endfor %}
 </table>
 
-{{totalLength}}
+{{totalHours}}
+{{totalMinutes}}
