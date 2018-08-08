@@ -1,9 +1,9 @@
 <div style="text-align: left;">
-  <a href="music">music</a>
+  <h1><a href="music">music</a></h1>
 </div>
 <div style="text-align: center;">
-  <a href="video">video</a>
+  <h1><a href="video">video</a></h1>
 </div>
 <div style="text-align: right;">
-  <a href="miscellaneous">miscellaneous</a>
+  <h1><a href="miscellaneous">miscellaneous</a></h1>
 </div>
