@@ -4,6 +4,7 @@
     &nbsp;
   {% else %}
     <font style="
+    font-weight: bold;
     color: rgb(
     {% include random.md min=0 max=200 %}, 
     {% include random.md min=0 max=200 %}, 
