@@ -1,4 +1,6 @@
-# video
+<div style="text-align: center;">
+  <h1>video</h1>
+</div>
 
 {% assign items = site.data.video | sort: 'date' %}
 <table>
