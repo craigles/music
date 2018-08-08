@@ -3,12 +3,12 @@
   {% if c == ' ' %}
     &nbsp;
   {% else %}
-    <a style="
+    <pre style="
     color: rgb(
     {% include random.md min=0 max=200 %}, 
     {% include random.md min=0 max=200 %}, 
     {% include random.md min=0 max=200 %})">
     {{c}}
-    </a>
+    </pre>
   {% endif %}
 {% endfor %}
