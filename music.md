@@ -10,8 +10,6 @@
             {% assign lengthComponents = r.length | split: ':' %}
             {% assign totalMinutes = totalMinutes | plus: lengthComponents[1] %}
             {% assign totalHours = totalHours | plus: lengthComponents[0] %}
-            {% assign totalMinutes = totalMinutes | plus: totalMinutes % 60 %}
-            {% assign totalHours = totalHours | plus: totalMinutes / 60 %}
             <tr>
                 <td>{{r.date}}</td>
                 <td>
@@ -28,5 +26,7 @@
     {% endfor %}
 </table>
 
+{% assign totalMinutes = totalMinutes | plus: totalMinutes % 60 %}
+{% assign totalHours = totalHours | plus: totalMinutes / 60 %}
 {{totalHours}}
 {{totalMinutes}}
