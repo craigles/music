@@ -13,7 +13,7 @@
                 <tr>
                     <td>{{r.date}}</td>
                     <td>
-                        {% include colourfy.md text=r.title %}
+                        {{r.title}}
                     </td>
                     <td>
                         {{r.length}}
