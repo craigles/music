@@ -1,15 +1,10 @@
 {% assign itemsByDate = include.items | sort: 'date' | group_by: 'date' | reverse %}
-{% assign totalMinutes = 0 %}
-{% assign totalHours = 0 %}
 
 <table>
     <tbody>
         {% for rGroup in itemsByDate %}
             {% assign rGroupItems = rGroup.items | sort: 'title' %}
             {% for r in rGroupItems %}
-                {% assign lengthComponents = r.length | split: ':' %}
-                {% assign totalMinutes = totalMinutes | plus: lengthComponents[1] %}
-                {% assign totalHours = totalHours | plus: lengthComponents[0] %}
                 <tr>
                     <td>{{r.date}}</td>
                     <td>
@@ -28,7 +23,7 @@
     <tfoot>
         <tr>
             <td colspan="2"></td>
-            <td>{% include totalTime.html minutes=totalMinutes hours=totalHours %}</td>
+            <td>{% include totalTime.html items=include.items %}</td>
             <td></td>
         </tr>
     </tfoot>
