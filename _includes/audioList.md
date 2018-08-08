@@ -13,7 +13,7 @@
                 <tr>
                     <td>{{r.date}}</td>
                     <td>
-                        {{r.title}}
+                        {{r.title}} {% include random.md max=100 %}
                     </td>
                     <td>
                         {{r.length}}
