@@ -26,7 +26,7 @@
     {% endfor %}
 </table>
 
-{% assign totalMinutes = totalMinutes | plus: totalMinutes % 60 %}
 {% assign totalHours = totalHours | plus: totalMinutes / 60 %}
+{% assign totalMinutes = totalMinutes % 60 %}
 {{totalHours}}
 {{totalMinutes}}
