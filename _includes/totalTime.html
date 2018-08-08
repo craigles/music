@@ -2,5 +2,10 @@
 {% assign totalHours = include.hours | plus: totalMinutesHours %}
 
 {% assign totalMinutes = totalMinutes | modulo: 60 %}
+
+{% if totalMinutes < 10 %}
+  {% assign totalMinutes = totalMinutes | prepend: '0' %}
+{% endif %}
+                       
 {% assign result = totalHours | append: ':' | append: totalMinutes %}
 {{result}}
