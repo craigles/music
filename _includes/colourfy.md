@@ -1,7 +1,7 @@
 {% assign chars = include.text | split: '' %}
 {% for c in chars %}
   {% if c == ' ' %}
-    nbsp&;
+    &nbsp;
   {% else %}
     <span style="
     color: rgb(
