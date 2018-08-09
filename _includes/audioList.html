@@ -1,5 +1,7 @@
 {% assign itemsByDate = include.items | sort: 'date' | group_by: 'date' | reverse %}
-
+<p>
+    {% include totalTime.html items=include.items %}
+</p>
 <table>
     <tbody>
         {% for rGroup in itemsByDate %}
@@ -20,11 +22,4 @@
             {% endfor %}
         {% endfor %}
     </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="2"></td>
-            <td>{% include totalTime.html items=include.items %}</td>
-            <td></td>
-        </tr>
-    </tfoot>
 </table>
