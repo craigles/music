@@ -10,12 +10,12 @@
 
 {% assign minuteRemainder = totalSeconds | divided_by: 60 %}
 {% assign totalMinutes = totalMinutes | plus: minuteRemainder %}
-  {{totalSeconds}} 
+
 {% assign totalSeconds = totalSeconds | modulo: 60 %}
-  {{totalSeconds}} 
+
 {% assign totalHours = totalMinutes | divided_by: 60 %}
 {% assign minutesInTotalHours = totalHours | times: 60 %}
-{% assign totalMinutes = totalMinutes | minus: minutesInTotalHours }
+{% assign totalMinutes = totalMinutes | minus: minutesInTotalHours %}
 
 {% if totalHours > 0 %}
   {{totalHours}} 
