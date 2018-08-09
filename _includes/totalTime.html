@@ -16,5 +16,10 @@
   {% assign totalMinutes = totalMinutes | prepend: '0' %}
 {% endif %}
 
-{% assign result = totalHours | append: ':' | append: totalMinutes %}
-{{result}}
+{% if totalHours > 0 %}
+  {{totalHours}} hours 
+{% endif %}
+  
+{% if totalMinutes > 0 %}
+  {{totalMinutes}} minutes
+{% endif %}
