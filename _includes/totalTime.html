@@ -1,5 +1,6 @@
 {% assign totalSeconds = 0 %}
 {% assign totalMinutes = 0 %}
+{% assign totalHours = 0 %}
 
 {% for item in include.items %}
   {% assign lengthComponents = item.length | split: ':' %}
@@ -10,12 +11,24 @@
 {% assign minuteRemainder = totalSeconds | divided_by: 60 %}
 {% assign totalMinutes = totalMinutes | plus: minuteRemainder %}
 
+{% assign totalHours = totalMinutes | divided_by: 60 %}
+{% assign totalMinutes = totalMinutes | minus: totalHours * 60 }
+
 {% assign totalSeconds = totalSeconds | modulo: 60 %}
 
 {% if totalSeconds < 10 %}
   {% assign totalSeconds = totalSeconds | prepend: '0' %}
 {% endif %}
 
+{% if totalHours > 0 %}
+  {{totalHours}} 
+    {% if totalHours > 1 %}
+      hours
+    {% else %}
+      hour
+    {% endif %}
+{% endif %}
+                       
 {% if totalMinutes > 0 %}
   {{totalMinutes}} 
     {% if totalMinutes > 1 %}
