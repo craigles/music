@@ -17,9 +17,19 @@
 {% endif %}
 
 {% if totalMinutes > 0 %}
-  {{totalMinutes}} minutes 
+  {{totalMinutes}} 
+    {% if totalMinutes > 1 %}
+      minutes
+    {% else %}
+      minute
+    {% endif %}
 {% endif %}
   
 {% if totalSeconds > 0 %}
-  {{totalSeconds}} seconds
+  {{totalSeconds}} 
+    {% if totalSeconds > 1 %}
+      seconds
+    {% else %}
+      second
+    {% endif %}
 {% endif %}
