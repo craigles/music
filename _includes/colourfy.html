@@ -1,4 +1,4 @@
-{% assign chars = include.text | split: '' %}
+{% assign chars = include.text | split: ' ' %}
 {% for c in chars %}
   {% if c == ' ' %}
     &nbsp;
