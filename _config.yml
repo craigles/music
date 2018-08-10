@@ -2,3 +2,5 @@ url: https://craigles.github.io/recordings
 collections:
   recordings:
     output: true
+
+theme: jekyll-theme-minimal
