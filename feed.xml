@@ -15,7 +15,7 @@ layout: null
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <pubDate>{{ post.date }}</pubDate>
-        <link>{{ post.path | prepend: site.baseurl | prepend: site.url }}</link>
+        <link>{{ post.path | prepend: "/" | prepend: site.baseurl | prepend: site.url }}</link>
       </item>
     {% endfor %}
   </channel>
