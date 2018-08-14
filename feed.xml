@@ -14,7 +14,7 @@ layout: null
     {% for post in site.data.music limit:100 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <pubDate>{{ post.date }}</pubDate>
         <link>{{ post.path | prepend: "recordings/" | prepend: site.baseurl | prepend: site.url }}</link>
       </item>
     {% endfor %}
