@@ -4,6 +4,8 @@
 </p>
 <table>
     <tbody>
+        
+        {% assign i = 0 %}
         {% for rGroup in itemsByDate %}
             {% assign rGroupItems = rGroup.items | sort: 'title' %}
             {% for r in rGroupItems %}
@@ -16,9 +18,11 @@
                         {{r.length}}
                     </td>
                     <td>
-                        <audio id="{{forloop.index}}" src="{{"recordings/" | append: r.path | relative_url | uri_escape}}" controls controlsList="nodownload" preload="none" />
+                        <audio id="{{i}}" src="{{"recordings/" | append: r.path | relative_url | uri_escape}}" controls controlsList="nodownload" preload="none" />
                     </td>
                 </tr>
+        
+            {% i = i + 1 %}
             {% endfor %}
         {% endfor %}
     </tbody>
