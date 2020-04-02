@@ -13,10 +13,13 @@
         var allOtherAudios = document.querySelectorAll("audio:not([id='" + parseInt(e.currentTarget.id) + "']");
         allOtherAudios.forEach(a => {
           a.pause();
-          a.classList.remove("playing");
         });
   
         e.currentTarget.classList.add("playing");
+    });
+    
+    item.addEventListener('pause',function(e) {
+        e.currentTarget.classList.remove("playing");
     });
   });
 </script>
