@@ -3,6 +3,9 @@
 {% include audioList.html items=site.data.music %}
 <script type="text/javascript">
   document.querySelector('audio').addEventListener('ended',function(e) {
-      document.getElementById(e.currentTarget.id).play();
+      var next = document.getElementById(parseInt(e.currentTarget.id) + 1);
+      if (next) {
+        next.play();
+      }
     });
 </script>
