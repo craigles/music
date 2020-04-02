@@ -15,11 +15,11 @@
           a.pause();
         });
   
-        e.currentTarget.classList.add("playing");
+        e.currentTarget.parentElement.parentElement.classList.add("playing");
     });
     
     item.addEventListener('pause',function(e) {
-        e.currentTarget.classList.remove("playing");
+        e.currentTarget.parentElement.parentElement.classList.remove("playing");
     });
   });
 </script>
