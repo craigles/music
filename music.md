@@ -5,7 +5,7 @@
   document.querySelectorAll('audio').forEach(item => {
     item.addEventListener('ended',function(e) {
         var allAudios = document.getElementsByTagName('audio');
-        allAudios.forEach((a, i) => {
+        Array.from(allAudios).forEach((a, i) => {
           if (a.id === e.currentTarget.id) {
             var next = allAudios[i+1 + 1];
             if (next) {
