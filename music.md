@@ -10,7 +10,6 @@
             var next = allAudios[i+1 + 1];
             if (next) {
               next.play();
-              break;
             }
           }
         });
