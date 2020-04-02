@@ -16,7 +16,7 @@
                         {{r.length}}
                     </td>
                     <td>
-                        <audio id="{{forloop.index}}" src="{{"recordings/" | append: r.path | relative_url | uri_escape}}" controls controlsList="nodownload" preload="none" />
+                        <audio id="{forloop.index}" src="{{"recordings/" | append: r.path | relative_url | uri_escape}}" controls controlsList="nodownload" preload="none" />
                     </td>
                 </tr>
             {% endfor %}
